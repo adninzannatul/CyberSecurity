@@ -27,6 +27,6 @@
     - Summary
        - Vulnerability type: User Enumeration
        - Kali command: wpscan --url http://wpdistillery.vm --enumerate u
-       - The above command on kali will brite force the user login information
+       - The above command on kali will brute force the user login information
        
  ![alt-text](user_enumeration.gif)
