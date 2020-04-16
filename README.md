@@ -10,9 +10,9 @@
            - Admin hovers on the link posted and the exploit is triggered
    - Gif walkthrough
          
- ![](xss.gif)
+ ![alt-text](xss.gif)
  
- 2. Wordpress: XSS(unauthenticated)
+ 2. Wordpress: XSS(unauthorized)
     - Summary
          - Vulnerability type: user enumeration
          - WP version: 4.2
@@ -21,7 +21,7 @@
              - Wrote the above html code in comment for a post
              - A user views the comment and hovers on the link, the exploit is soon triggered
            
- ![](xss(unauthenticated).gif)
+ ![alt-text](xss(unauthorized).gif)
  
  3. Kali WPscan
     - Summary
