@@ -20,7 +20,8 @@
          - Steps: 
              - Wrote the above html code in comment for a post
              - A user views the comment and hovers on the link, the exploit is soon triggered
-           
+    - Gif walkthrough
+   
  ![alt-text](xss(unauthorized).gif)
  
  
@@ -29,7 +30,8 @@
        - Vulnerability type: User Enumeration
        - Kali command: wpscan --url http://wpdistillery.vm --enumerate u
        - The above command on kali will brute force the user login information
-       
+    - Gif walkthrough
+    
  ![alt-text](user_enumeration.gif)
  
   # Pentesting (Week 8)
@@ -41,5 +43,6 @@
                 - Load https://35.184.88.145/blue/public/salesperson.php on browser that gives list of employees
                 - Add ?id=2 at the end of the above url address and immediately receive information about an employee whose id is 2
                 - Add ' OR SLEEP(8)=2--' at the end of the previous url and thesame page loads after waiting 8s which means there is  successful sql injection.
+       - Gif walkthrough
                 
 ![alt-text](sql_injection.gif)
