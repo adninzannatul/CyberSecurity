@@ -1,4 +1,4 @@
-# Assignment 7-Pentesting
+# Pentesting (Week 7)
 1. Wordpress: XSS(Authenticated)
    - Summary
       - Vulnerability type: Authenticated Cross site scripting
@@ -16,12 +16,13 @@
     - Summary
          - Vulnerability type: user enumeration
          - WP version: 4.2
-         - HTML line: <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px></a>
+         - HTML line: <a title='x onmouseover=alert(unescape(/hello%20world/.source))></a>
          - Steps: 
              - Wrote the above html code in comment for a post
              - A user views the comment and hovers on the link, the exploit is soon triggered
            
  ![alt-text](xss(unauthorized).gif)
+ 
  
  3. Kali WPscan
     - Summary
@@ -30,3 +31,15 @@
        - The above command on kali will brute force the user login information
        
  ![alt-text](user_enumeration.gif)
+ 
+  # Pentesting (Week 8)
+  
+  1. SQL injection
+       - Summary
+           - Vulnerability: sql injection
+           - Steps:
+                - Load https://35.184.88.145/blue/public/salesperson.php on browser that gives list of employees
+                - Add ?id=2 at the end of the above url address and immediately receive information about an employee whose id is 2
+                - Add ' OR SLEEP(8)=2--' at the end of the previous url and thesame page loads after waiting 8s which means there is  successful sql injection.
+                
+![alt-text](sql_injection.gif)
